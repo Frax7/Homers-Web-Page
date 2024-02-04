@@ -1,0 +1,262 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Set the sizing of an element to include it's border */
+}
+
+* {
+  margin: 0; /* Set the default margin to 0 */
+  padding: 0; /* Set the default padding to 0 */
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto; /* Makes link undelines look better */
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  max-width: 200%; /* Makes it responsive */
+  height: auto; /* Makes it responsive */
+  vertical-align: middle; /* Makes text next to inline images look better */
+  font-style: italic; /* If the images don't load it makes the alt decription look better */
+  background-repeat: no-repeat;
+  /* The background repeat and size are there if you want to load a picture first like a backroung image that is worse quality while the better quality image loads */
+  background-size: cover;
+}
+
+/* Turns off animation for people who don't want to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+body,
+html {
+  height: 100%; /* Makes the body element full screen */
+  scroll-behavior: smooth; /* Makes normal scrolling smooth */
+}
+
+/* END CSS RESET */
+
+@font-face {
+  font-family: "Cooper Black Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cooper Black Regular"),
+    url("../assets/Cooper Black Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Cooper Black Regular";
+  font-size: 38px;
+  background-color: #99d1ea;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+  body {
+    font-size: 24px;
+  }
+
+  .mouth1,
+  .mouth2 {
+    img {
+      width: 100% !important;
+    }
+  }
+
+  .bell1,
+  .bell2 {
+    img {
+      width: 80% !important;
+    }
+  }
+
+  .toaster3 img {
+    width: 100% !important;
+  }
+
+  .toaster4 img {
+    width: 120% !important;
+  }
+}
+
+h1 {
+  height: 10vh;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+  text-wrap: balance;
+}
+
+audio {
+  display: none;
+}
+
+section {
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(5, 1fr);
+  height: 90vh;
+  margin: auto auto;
+}
+
+.alarm1 {
+  grid-area: 1;
+  align-self: flex-end;
+  justify-self: center;
+  img {
+    width: 100%;
+  }
+}
+
+.alarm2 {
+  grid-area: 5 / 2;
+  align-self: flex-start;
+  justify-self: end;
+  img {
+    width: 125%;
+  }
+}
+
+.alarm3 {
+  grid-area: 5 / 5;
+  align-self: flex-start;
+  justify-self: center;
+  img {
+    width: 100%;
+  }
+}
+
+.jesus {
+  grid-area: 2 / 3 / span 4 / 4;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 110%;
+  }
+}
+
+.toaster1 {
+  grid-area: 2 / 2;
+  align-self: center;
+  justify-self: start;
+  img {
+    width: 70%;
+  }
+}
+
+.toaster2 {
+  grid-area: 2 / 5;
+  align-self: flex-start;
+  justify-self: start;
+  img {
+    width: 70%;
+  }
+}
+
+.toaster3 {
+  grid-area: 4 / 1;
+  align-self: flex-start;
+  justify-self: center;
+  img {
+    width: 125%;
+  }
+}
+
+.toaster4 {
+  grid-area: 5 / 4;
+  align-self: center;
+  justify-self: center;
+  img {
+    width: 150%;
+  }
+}
+
+.worm1 {
+  grid-area: 2 / 1;
+  align-self: flex-end;
+  justify-self: start;
+  img {
+    width: 130%;
+  }
+}
+
+.worm2 {
+  grid-area: 6 / 1;
+  align-self: flex-end;
+  justify-self: start;
+  img {
+    width: 130%;
+  }
+}
+
+.worm3 {
+  grid-area: 6 / 2;
+  align-self: flex-end;
+  justify-self: end;
+  img {
+    width: 130%;
+  }
+}
+
+.worm4 {
+  grid-area: 2 / 4;
+  align-self: center;
+  justify-self: center;
+  img {
+    width: 130%;
+  }
+}
+
+.mouth1 {
+  grid-area: 3 / 2;
+  align-self: center;
+  justify-self: start;
+  img {
+    width: 150%;
+  }
+}
+
+.mouth2 {
+  grid-area: 3 / 5;
+  align-self: center;
+  justify-self: center;
+  img {
+    width: 150%;
+  }
+}
+
+.bell1 {
+  grid-area: 5 / 1;
+  align-self: flex-end;
+  justify-self: end;
+  img {
+    width: 125%;
+  }
+}
+
+.bell2 {
+  grid-area: 3 / 4;
+  align-self: end;
+  justify-self: center;
+  img {
+    width: 125%;
+  }
+}
