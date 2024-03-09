@@ -65,6 +65,7 @@ body {
   font-family: "Cooper Black Regular";
   font-size: 38px;
   background-color: #99d1ea;
+  cursor: pointer;
 }
 
 /* Media query para pantallas más pequeñas */
@@ -102,10 +103,6 @@ h1 {
   margin: auto;
   padding: 20px 0;
   text-wrap: balance;
-}
-
-audio {
-  display: none;
 }
 
 section {
