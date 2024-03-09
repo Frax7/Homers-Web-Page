@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const audio = new Audio('assets/noise.mp3');
+    const audio = new Audio('assets/noise.m4a');
 
     function playAudio() {
         audio.play();
