@@ -145,7 +145,7 @@ section {
   justify-self: center;
   align-items: center;
   justify-content: center;
-  img {
+  video {
     width: 110%;
   }
 }
