@@ -59,6 +59,7 @@ html {
   font-weight: normal;
   src: local("Cooper Black Regular"),
     url("../assets/Cooper Black Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 body {
