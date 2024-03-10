@@ -108,7 +108,7 @@ h1 {
 
 section {
   display: grid;
-  grid-template: repeat(6, 1fr) / repeat(5, 1fr);
+  grid-template: repeat(6, 15vh) / repeat(5, 1fr);
   height: 90vh;
   margin: auto auto;
 }
